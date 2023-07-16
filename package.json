@@ -1,0 +1,26 @@
+{
+    "name": "tree-shaking",
+    "sideEffects": false,
+    "version": "1.0.0",
+    "main": "./dist/index.js",
+    "type": "module",
+    "scripts": {
+        "build/rollup": "rollup --config",
+        "build/webpack": "webpack --config webpack.config.js"
+    },
+    "devDependencies": {
+        "@rollup/plugin-node-resolve": "^15.1.0",
+        "@rollup/plugin-terser": "^0.4.3",
+        "@rollup/plugin-typescript": "^11.1.2",
+        "rollup": "^3.26.2",
+        "ts-loader": "^9.4.4",
+        "tslib": "^2.6.0",
+        "typescript": "^5.1.6",
+        "webpack": "^5.88.1",
+        "webpack-cli": "^5.1.4"
+    },
+    "dependencies": {
+        "@effect/data": "^0.15.0",
+        "@effect/io": "^0.32.2"
+    }
+}
