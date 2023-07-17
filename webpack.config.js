@@ -8,9 +8,10 @@ const __dirname = dirname(__filename);
 export default {
   mode: 'production',
   cache: false,
+  devtool: 'source-map',
   optimization: {
-    minimize: false,
-    // minimize: true,
+    // minimize: false,
+    minimize: true,
   },
   entry: {
     effect: './src/effect.ts',
